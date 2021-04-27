@@ -7,10 +7,13 @@
 for (let i = 0; i <= 100; i++) {
     var numeri = i;
     if (numeri % 3 == 0 && numeri % 5 == 0) {
+        document.getElementById('dino_3').innerHTML = ' FizzBuzz';
         console.log(numeri + ' FizzBuzz');
     } else if (numeri % 3 == 0) {
+        document.getElementById('dino_1').innerHTML = ' Fizz';
         console.log(numeri + ' Fizz');
     } else if (numeri % 5 == 0) {
+        document.getElementById('dino_2').innerHTML = ' Buzz';
         console.log(numeri + ' Buzz');
     } else console.log(numeri)
 }
